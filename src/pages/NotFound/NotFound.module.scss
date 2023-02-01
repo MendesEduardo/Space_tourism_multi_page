@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+body {
+    background: $Bg-Blue;
+}
+
+.notFound {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2em;
+    font-size: 100px;
+    color: $White;
+
+    button {
+        text-transform: uppercase;
+        font-size: 50px;
+        background: $Bg-Dark-Blue;
+        border-radius: 0.5em;
+        padding: 0.5em;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+}

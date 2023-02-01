@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+
+.crew {
+    background: url("../../../public/assets/crew/background-crew-mobile.jpg") no-repeat center/cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 7em 1em 0 1em;
+
+    h1 {
+        font-size: 35px;
+        color: $Gray;
+        margin-bottom: 0.5em;
+
+        span {
+            color: $White;
+            text-transform: uppercase;
+        }
+    }
+    h2 {
+        margin-top: -0.5em;
+        font-size: 45px;
+        color: $White;
+    }
+
+    h3 {
+        font-size: 30px;
+        color: $Gray;
+        margin-bottom: 1em;
+    }
+
+    p {
+        margin-top: 1em;
+        color: $White;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+    ul {
+        margin: 1em 0 1em 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        padding: 1em;
+    }
+    button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $White;
+    }
+}
+
+.buttonActive {
+    opacity: 0.5;
+}
+
+
+@media (min-width: 768px) {
+    .crew {
+        background: url("../../../public/assets/crew/background-crew-tablet.jpg") no-repeat center/cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__crewText {
+            width: 500px;
+        }
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .crew {
+        background: url("../../../public/assets/crew/background-crew-desktop.jpg") no-repeat center/cover;
+    }
+}

@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 1em 0 1em;
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #111827;
+        width: calc(100vw - 50px);
+        backdrop-filter: blur(20px);
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    nav ul li {
+        color: $White ;
+        margin: 1em;
+        font-size: 15px;
+    }
+
+    button {
+        color: $White ; 
+    }
+}
+
+.menu {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .bar {
+        width: 50%;
+        height: 1px;
+        background: $White;
+    }
+
+    .header {
+        nav {
+            display: block;
+        }
+
+        nav ul {
+            flex-direction: row;
+            position: relative;
+            top: 0;
+            right: 0;
+            width: auto;
+        }
+
+        nav ul li {
+            margin: 2em;
+        }
+    }
+}

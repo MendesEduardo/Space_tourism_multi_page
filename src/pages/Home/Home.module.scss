@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+
+.home {
+    background: url("../../../public/assets/home/background-home-mobile.jpg") no-repeat center/cover;
+    height: calc(130vh);
+    padding-top: 5em;
+    text-align: center;
+    color: $White;
+
+    h1 {
+        font-size: 35px;
+        line-height: 3em;
+
+        span {
+            font-size: 100px;
+            text-transform: uppercase;
+        }
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        color: $Black;
+        text-transform: uppercase;
+        font-size: 25px;
+        margin-top: 5em;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: $White;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 768px) {
+    .home {
+        background: url("../../../public/assets/home/background-home-tablet.jpg") no-repeat center/cover;
+        height: calc(100vh);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10em;
+
+        &__divisao {
+            width: 500px;
+            text-align: justify;
+
+            h1 {
+                font-size: 35px;
+                line-height: 4em;
+
+                span {
+                    font-size: 180px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        button {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .home {
+      background: url("../../../public/assets/home/background-home-desktop.jpg")
+        no-repeat center/cover;
+      height: 100vh;
+    }
+}

@@ -1,0 +1,11 @@
+@import-normalize;
+@import "./variables";
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: $Public-Sans-Regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
